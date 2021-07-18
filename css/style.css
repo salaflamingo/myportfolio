@@ -1,0 +1,471 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: 'Noto Sans', sans-serif,'Noto Sans JP', 'Dancing Script', cursive;
+  color: #333;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  opacity: .7;
+  transition: .3s;
+}
+.section-wrapper {
+  padding: 80px 0 40px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(013, 053, 099, 1);
+  text-align: center;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto 50px;
+}
+.title::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+.title::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  vertical-align: middle;
+  margin-left: 7px;
+}
+
+/* ヘッダー */
+.header {
+  padding: 20px 8vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(013, 053, 099, 1);
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.header-inner a {
+  color: #fff;
+}
+.site-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  padding-right: 15px;
+  letter-spacing: 0.2em;
+}
+.nav-item:last-of-type {
+  padding-right: 0;
+}
+.header.fixed {
+  position: fixed;
+  background-color: rgba(013, 053, 099, 0.8);
+  transition: .3s;
+}
+
+/* バーガーボタン */
+.burger-btn {
+  display: none;
+}
+
+/* ファーストビュー */
+.fv-img {
+  background-image: url(../img/fv-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.fv-back-img {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.fv-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.main-copy {
+  font-size: 9rem;
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  color: #fff;
+}
+.main-text {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* アバウト */
+.about-wrapper {
+  background-image: url(../img/about-img.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 4vw;
+  padding: 50px 0;
+}
+.about-container {
+  display: flex;
+  justify-content: space-around;
+}
+.my-photo {
+  width: 45%;
+}
+.my-photo img {
+  border-radius: 50%;
+}
+.text-area {
+  width: 45%;
+}
+.text-area .text {
+  padding-bottom: 10px;
+}
+.twitter-link {
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* スキル */
+.skill-wrapper {
+  margin: 0 4vw;
+  padding: 50px 0;
+  background-color: #f7f4f4;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.skill-item {
+  width: calc(100% / 3);
+  height: 220px;
+  text-align: center;
+  margin: 20px 0;
+}
+.size {
+  font-size: 10em;
+}
+.jquery-icon {
+  width: 150px;
+  margin: 0 auto;
+}
+.fa-html5 {
+  color: #df4b25;
+}
+.fa-css3-alt {
+  color: #2149df;
+}
+.fa-sass {
+  color: #c76495;
+}
+.jquery-icon {
+  color: yellow;
+}
+.fa-bootstrap {
+  color: #01239b;
+}
+
+/* サービス */
+.service-wrapper {
+  background-image: url(../img/service-img.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 4vw;
+  padding: 50px 0;
+}
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+.service-item {
+  background-color: rgba(013, 053, 099, 0.8);
+  width: 30%;
+  margin-top: 30px;
+}
+.service-item .icon {
+  background-color: rgba(013, 053, 099, 0.8);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: -50px auto 0;
+  border-radius: 50%;
+  padding-top: 15px;
+}
+.service-item h3 {
+  text-align: center;
+  padding: 30px 0 15px 0;
+}
+.service-item .text {
+  padding: 15px;
+}
+
+/* ワークス */
+#works {
+  background-image: url(../img/works-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.works-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.works-list {
+  display: flex;
+  justify-content: space-around;
+}
+.works-item {
+  width: 32%;
+  background-color: #fff;
+}
+.works-img {
+  width: 95%;
+  margin: 15px auto;
+  box-shadow: 0 0 8px gray;
+}
+.works-item .text {
+  padding: 15px;
+}
+
+/* お問い合わせ */
+.contact-wrapper {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  padding: 0 50px;
+}
+.contact-wrapper .text {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.form-list {
+  margin-bottom: 20px;
+}
+.form-list:last-of-type {
+  margin-bottom: 50px;
+}
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-list p input,
+.form-list p textarea {
+  padding: 5px;
+}
+input,
+textarea {
+  resize: none;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: 1px solid #141414;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.btn {
+  background-color: gray;
+  color: #fff;
+  display: block;
+  line-height: 48px;
+  width: 210px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.btn:hover {
+  opacity: .7;
+}
+
+/* フッター */
+.footer {
+  background-color: rgba(013, 053, 099, 1);
+  color: #fff;
+  line-height: 48px;
+  text-align: center;
+}
+
+
+/* スマホ */
+@media screen and (max-width:768px) {
+  
+  /* ヘッダー */
+  .header-nav {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(013, 053, 099, 0.8);
+  }
+  .nav-list {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .nav-item {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  /* バーガーボタン */
+  .burger-btn {
+    display: block;
+    width: 39px;
+    height: 39px;
+    position: relative;
+    z-index: 3;
+    border: none;
+  }
+  .bar {
+    width: 20px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #fff;
+  }
+  .bar_top {
+    top: 10px;
+  }
+  .bar_mid {
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .bar_bottom {
+    bottom: 10px;
+  }
+  .burger-btn.close .bar_top {
+    transform: translate(-50%,10px) rotate(45deg);
+    transition: transform .3s;
+  }
+  .burger-btn.close .bar_mid {
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .burger-btn.close .bar_bottom {
+    transform: translate(-50%,-8px) rotate(-45deg);
+    transition: transform .3s;
+  }
+  body.noscroll {
+    overflow: hidden;
+  }
+
+  /* ファーストビュー */
+  .main-copy {
+    font-size: 7rem;
+  }
+  .main-text {
+    font-size: 1.6rem;
+  }
+
+  /* アバウト */
+  .about-container {
+    display: block;
+  }
+  .my-photo {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .text-area {
+    width: 80%;
+    margin: 30px auto 0;
+  }
+  
+
+  /* スキル */
+  .skill-title {
+    font-size: 2rem;
+  }
+  .skill-item {
+    width: calc(100% / 2);
+    height: 220px;
+  }
+  .size {
+    font-size: 8em;
+  }
+  
+
+  /* サービス */
+  .service-wrapper {
+    background-image: url(../img/service-img-sp.jpg);
+  }
+  
+  .service-list {
+    flex-direction: column;
+  }
+  .service-item {
+    margin: 50px auto;
+    width: 80%;
+  }
+  
+
+  /* ワークス */
+  .works-list {
+    flex-direction: column;
+  }
+  .works-item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* コンタクト */
+  #contact {
+    margin: 0 4vw;
+  }
+  .contact-wrapper {
+    max-width: 500px;
+  }  
+
+}
